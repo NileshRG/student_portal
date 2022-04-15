@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+      
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+	<script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+</head>
+<body>
+		<div style="margin: auto;width: 50%;">
+			<h2 style="text-align:center;text-style:bold;">Student Registration Portal</h2>
+		</div>
+		<div style="margin: auto;width: 60%;height: 70px;padding: 10px;margin-top: 50px;">
+				<div style="float:left;width:30%;height:100px">
+					
+					<button type="button" th:onclick="|window.location.href='/new'|"  class="btn btn-primary">Add Student</button>   
+					
+				</div>
+				<div style="float:left;width:40%;height:100px">
+					
+					<button type="button" th:onclick="|window.location.href='/findStudent'|"  class="btn btn-primary">Find Student</button>   
+					
+				</div>
+				<div style="float:left;width:30%;height:100px">
+					
+					<button type="button" th:onclick="|window.location.href='/viewAll'|"  class="btn btn-primary">View All Student</button>   
+					
+				</div>
+
+
+
+
+		</div>
+</body>
+</html>
+

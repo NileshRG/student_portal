@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+      
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+<script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<div style="margin: auto;width: 50%;">
+			<h2 style="text-align:center;text-style:bold;">Student Registration Portal</h2>
+		</div>
+		
+<div style="margin: auto;width: 100%;align-content: center;">
+
+
+
+<tr>
+
+<div class="col-sm-5" align = "center" style="margin-left: 30%;">
+      <div class="panel-body" align = "center" >
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+             
+                  <th>Student Name</th>
+                  <th>Father Name</th>
+                  <th>Last Name</th>
+                  <th>Address</th>
+		            <th>Department</th>
+		            <th>Roll NO</th>
+		           
+                 
+                  
+         </tr>
+        </thead>
+        <tbody>
+          <tr  th:each="student : ${studentList}" >
+			
+          <td th:text="${student.student_name}">Student Name</td>
+          <td th:text="${student.father_name}">Father Name</td>
+          <td th:text="${student.last_name}">Last Name</td>
+          <td th:text="${student.address}">Address</td>
+		<td th:text="${student.dept}">Last Name</td>
+		<td th:text="${student.roll_no}">Address</td>
+          
+           
+               
+
+
+             
+          </tr>
+            
+          </tbody>
+      </table>
+      </div>
+    </div>
+ 
+</tr>
+ 
+</tbody>
+</table>
+</div>
+</body>
+</html>
